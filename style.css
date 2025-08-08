@@ -30,7 +30,7 @@
     border: 1px solid #ff5600;
     padding: 20px 55px;
     margin-right: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
     font-family: sans-serif;
@@ -51,15 +51,78 @@
 .header{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
-.container{
-    background-image:url(https://preview.colorlib.com/theme/allfood/assets/img/hero/h1_hero.png);
-    height: 100vh;
-    width: 100vw;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(https://preview.colorlib.com/theme/allfood/assets/img/hero/h1_hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 1080px;
+    width: 100%;
+    padding-top: 20px;
 }
+
+.line1{
+    color: #ff5600;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.line2{
+    color: #212025;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 40px 0;
+}
+
+.p1{
+    color: #212025;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.page1{
+    width: 800px;
+    height: 440.87px;
+    padding-top: 225px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btt2 {
+    width:fit-content;
+    border: 1px solid #ff5600;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #d94d07e6 0%, #d94d07e6 100%);
+    background-color: #ff5600;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.2s linear, color 0.2s linear;
+}
+
+.btt2:hover {
+    cursor: pointer;
+    background-size: 100% 100%;
+}
+
+
 

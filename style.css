@@ -71,7 +71,7 @@ body {
 
 .line1{
     color: #ff5600;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     font-family: sans-serif;
 }
@@ -86,10 +86,11 @@ body {
 
 .p1{
     color: #212025;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     font-family: sans-serif;
     line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 .page1{
@@ -100,14 +101,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    animation: slideIn 1s ease forwards;
 }
 
 .btt2 {
     width:fit-content;
     border: 1px solid #ff5600;
-    padding: 20px 40px;
+    padding: 20px 45px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     font-family: sans-serif;
     color: #fff;
@@ -122,6 +124,74 @@ body {
 .btt2:hover {
     cursor: pointer;
     background-size: 100% 100%;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.page2{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 80px;
+}
+
+.page2_l{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 80px 0;
+}
+
+.page2_r img.chef{
+    width: 570px;
+    height: 683.53px;
+}
+
+.line3{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #212025;
+    margin: 25px 0;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    margin-top: 20px;
+}
+
+.feature img.pic{
+    width: 45px;
+    height: 45px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.p2{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #212025;
+    line-height: 1.8;
 }
 
 
